@@ -1,18 +1,5 @@
-let pokemonList = [
-    {
-      name: "Bulbasaur",
-      height: 0.7,
-      types: ["grass", "poison"]
-    },
-    {
-      name: "Charizard",
-      height: "1.7",
-      types: ["fire", "flying"]
-    },
-    {
-      name: "Metapod",
-      height: 0.7,
-      types: ["bug"]
-    }
-   ];
-  
+let pokemonList = ["Bulbasaur (height: 0.7)","Charizard (height: 1.7)","Metapod (height: 0.7)"];
+for (let i = 0; i < pokemonList.length; i++) {
+  console.log(pokemonList[i]);
+  }
+document.write(pokemonList)
