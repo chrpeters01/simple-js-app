@@ -16,8 +16,13 @@ const pokemonList = [
   }
  ];
 
-  for (let i = 0; i < pokemonList.length; i++) {
-  console.log(pokemonList[i].name);
-  console.log(pokemonList[i].height);
-  document.write(pokemonList)
-}
+  for (let i = 0; i < pokemonList.length; i++){
+    if (pokemonList[i].height <1.0 && pokemonList[i].height >1.5)
+    console.log(pokemonList[i].name + " Wow, that's big!");
+    document.write(pokemonList)
+  }
+
+  
+
+  
+
