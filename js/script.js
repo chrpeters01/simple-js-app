@@ -19,4 +19,5 @@ const pokemonList = [
   for (let i = 0; i < pokemonList.length; i++) {
   console.log(pokemonList[i].name);
   console.log(pokemonList[i].height);
+  document.write(pokemonList)
 }
