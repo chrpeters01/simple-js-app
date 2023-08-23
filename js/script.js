@@ -16,10 +16,15 @@ let pokemonList = [
   }
  ];
 
-  for (let i = 0; i < pokemonList.length; i++){
-    if (pokemonList[i].height <1.0 && pokemonList[i].height >1.5) {
+
+{
+ 
+  for (let i = 0; i < pokemonList.length; i++) {
+    if (pokemonList[i].height < 0.9 && pokemonList[i].height > 1.0) {
     console.log(pokemonList[i].name + " Wow, that's big!") };
     document.write(pokemonList[i].name);
   }
 
-  
+}
+
+ 
