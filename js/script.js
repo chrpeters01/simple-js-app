@@ -16,13 +16,11 @@ let pokemonList = [
   }
  ];
 
-{
+
  for (let i = 0; i < pokemonList.length; i++) {
     if (pokemonList[i].height > 1.0) {
-    document.write(" " + pokemonList[i].name + " (height 1.7) - Wow, that's big!") };
-    if (pokemonList[i].height < 0.9) {
-    document.write(" " + pokemonList[i].name + " (height 0.7)") };
+    document.write(" " + pokemonList[i].name + " (height 1.7) - Wow, that's big!");
+    } else {
+    document.write(" " + pokemonList[i].name + " (height 0.7)");
+    }
   }
-}
-
- 
