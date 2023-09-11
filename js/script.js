@@ -4,7 +4,7 @@ let pokemonRepository = (function(){
         {
             name: 'Bulbasaur',
             height: 0.7,
-            types: ['Grass', 'Poison']
+            types: ['Grass' , 'Poison']
     
         },
         {
@@ -31,9 +31,6 @@ let pokemonRepository = (function(){
     };
  })();
       
-
-    
-  
-  pokemonList.forEach(function(pokemon) {
-    console.log(pokemon.name + pokemon.height + pokemon.types);
-  });
+pokemonRepository.getAll().forEach(function(pokemon){
+document.write(`<p> ${pokemon.name} : (types: ${pokemon.types}) / (height: ${pokemon.height})`);
+})
