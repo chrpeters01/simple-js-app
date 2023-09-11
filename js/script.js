@@ -1,38 +1,39 @@
 let pokemonRepository = (function(){
-let pokemonList=[
-      
-      {
-          name: 'Bulbasaur',
-          height: 0.7,
-          types: ['Grass', 'Poison']
-  
+  let pokemonList=[
+        
+        {
+            name: 'Bulbasaur',
+            height: 0.7,
+            types: ['Grass', 'Poison']
+    
+        },
+        {
+            name: 'Charizard',
+            height: 1.7,
+            types: ['Fire' , 'Flying']
+    
+        },
+        {
+            name: 'Metapod',
+            height: 0.7,
+            types: ['Bug']
+    
+        }
+    ];
+    
+    return {
+      add: function(pokemon) {
+        pokemonList.push(pokemon);
       },
-      {
-          name: 'Charizard',
-          height: 1.7,
-          types: ['Fire' , 'Flying']
-  
-      },
-      {
-          name: 'Metapod',
-          height: 0.7,
-          types: ['Bug']
-  
+      getAll: function() {
+        return pokemonList;
       }
-  ]
-  function getAll() {
-    return pokemonList;
-  }
+    };
+ })();
+      
 
-  return {
-    add: add,
-    getAll: getAll
-  };
-})();
-
-pokemonList.forEach(function(pokemon) {
-  console.log(pokemon.name + pokemon.height + pokemon.types);
-});
- 
- 
-
+    
+  
+  pokemonList.forEach(function(pokemon) {
+    console.log(pokemon.name + pokemon.height + pokemon.types);
+  });
