@@ -57,15 +57,15 @@ let pokemonRepository = (function () {
         return ability.ability.name;
       });
     }).catch(function (e) {
-      hideLoadingMessage();
       console.error(e);
     })
   }
 
   function showDetails(pokemon) {
-    loadDetails(pokemon)
-    console.log(pokemon);
-  };
+    loadDetails(pokemon).then(function () {
+       console.log(pokemon);
+     });
+    }
 
   return {
     add: add,
