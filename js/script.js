@@ -53,9 +53,6 @@ let pokemonRepository = (function () {
       item.abilities = details.abilities.map(function (ability) {
         return ability.ability.name;
       });
-      item.abilities = details.abilities.map(function (ability) {
-        return ability.ability.name;
-      });
     }).catch(function (e) {
       console.error(e);
     })
