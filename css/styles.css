@@ -3,8 +3,12 @@ body {
    font-family: 'Pixelify Sans';
 }
 
+nav {
+  background-image: linear-gradient(#cc0000,#edf6f9);
+}
+
 main {
-  background-image: linear-gradient(#3564ae,#edf6f9);
+  background-image: linear-gradient(#000000,#bcbcbc);
 }
 
 .logo-img {
@@ -14,8 +18,8 @@ main {
 
 .my-btn {
   border: none;
-  color: #3564ae;
-  background-color: #ffcb05;
+  color: #000000;
+  background-color: #cc0000;
   padding: 10px 15px;
   margin: 5px auto;
   border-radius: 5px;
@@ -40,7 +44,7 @@ main {
 .btn-modal-close {
   border: none;
   color: #ffff;
-  background-color: #3564ae;
+  background-color: #000000;
   border-radius: 5px;
   padding: 5px 10px;
 }
@@ -74,5 +78,5 @@ main {
   text-align: center;
   font-size: 34px;
   font-weight: 600;
-  color: #3564ae;
+  color: #000000;
 }
