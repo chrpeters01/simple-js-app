@@ -31,7 +31,6 @@ let pokemonRepository = (function () {
 
     button.addEventListener("click", () => showDetails(pokemon))
 
-    
   }
 
   function showDetails(pokemon) {
@@ -96,13 +95,7 @@ let pokemonRepository = (function () {
     let pokemonTypesElement = document.querySelector('.modal-types');
     pokemonTypesElement.innerText = `Types: ${pokemon.types}`
 
-    
-    
-    }
-
-  
-
-    
+  }
 
   return {
     getAll: getAll,
